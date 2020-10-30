@@ -1,0 +1,122 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: anim1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.loader-one{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.loader-two{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.loader-three{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.loader-one, .loader-two, .loader-three{
+    animation-name: anim2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.css{
+    width: 40px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: green;
+    font-weight: bold;
+    animation-name: anim4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes anim1 {
+    25%{
+        background-color: red;
+        transform: translateY(300px) ;
+    }
+    50%{
+       background-color: blue;
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateX(300px);
+        background-color: yellow;
+    }
+    100%{
+        transform: translateX(0);
+        background-color: blue;
+    }
+}
+
+@keyframes anim2{
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+@keyframes anim4 {
+    20%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: translateX(300px) rotate(0);
+        background-color: aquamarine;
+    }
+    70%{
+        transform: translateX(300px) rotate(0);
+        background-color: aquamarine;
+    }
+    100%{
+        transform: translateX(0) rotate(-360deg);
+        background-color: green;
+    }
+
+}
