@@ -1,0 +1,251 @@
+body{
+    background-color: #eef2f5;
+}
+
+.img1{
+    width: 60px;
+    height: 30px;
+    background-color: white;
+}
+
+.tepa{
+    padding-left: 120px;
+    padding-right: 120px;
+    border-bottom: 1px solid lightgrey;
+    
+    display: flex;
+    justify-content: space-between;
+    /* ikki tomonga junatiw */
+    background-color:white;
+    
+    align-items: center;
+    /* vertikaliga urtga olish */
+   
+    top: 0;
+
+    /* z oqida siljitiw */
+    
+}
+.tepa ul li{
+    display: inline-block;
+    padding-top: 10px;
+}
+.tepa ul li a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+.tepa ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: all 0.4s linear;
+}
+.tepa ul li a:hover::after{
+    width: 100%;
+}
+
+.tepa2{
+    padding-left: 120px;
+    padding-right: 120px;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #eef2f5;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.tepa2 img{
+    width: 25px;
+    height: 25px;
+    transform: translateX(-350px);
+}
+.btn{
+    margin: 0 10px;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+.container{
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+.col-4{
+    padding-bottom: 30px;
+  
+}
+.col-12, .col-6{
+    padding-top: 10px;
+}
+
+.kard{
+    height: 620px;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.kard img{
+    margin-top: -15px;
+    margin-left: -15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.kard .row{
+    height: 110px;
+    box-sizing: border-box;
+   
+}
+.kard .row:nth-child(3){
+    border-bottom: 1px solid lightgray;
+}
+
+.col-4 h3{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.col-4 h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.kard:hover{
+    box-shadow: 0 0 15px grey;
+}
+
+.kard::after{
+    content: '';
+    height: 0;
+    width: 2px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: all 0.7s linear;
+}
+.kard:hover::after{
+    height: 64.5%;
+    
+}
+
+.kard::before{
+    content: '';
+    height: 0;
+    width: 2px;
+    background-color: red;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transition: all 0.7s linear;
+}
+.kard:hover::before{
+    height: 64.5%;
+    
+}
+
+.tushadigan{
+    width: 100%;
+    height: 95px;
+    padding: 15px 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -195px;
+    transition: all 0.5s linear;
+}
+
+.kard:hover .tushadigan{
+    bottom: 0;
+}
+
+.tushadigan .col-4{
+    margin-top: 20px;
+ 
+}
+
+.col-12 p{
+    text-align: center;
+    margin-top: 25px;
+}
+.pp{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+.past{
+    padding-left: 120px;
+    padding-right: 120px;
+    border-bottom: 1px solid lightgrey;
+    
+    display: flex;
+    justify-content: space-between;
+    /* ikki tomonga junatiw */
+    background-color:white;
+    
+    align-items: center;
+    /* vertikaliga urtga olish */
+   
+    top: 0;
+
+    /* z oqida siljitiw */
+    
+}
+.past ul li{
+    display: inline-block;
+    padding-top: 10px;
+}
+.past ul li a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+.past ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: all 0.4s linear;
+}
+.past ul li a:hover::after{
+    width: 100%;
+}
+.past ul{
+    margin-left: -490px;
+}
