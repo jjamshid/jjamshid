@@ -1,0 +1,93 @@
+body{
+    background-color: #eef2f5;
+}
+
+.cardd{
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+
+
+}
+.obuna{
+    width: 70%;
+    margin: 0 auto; 
+    box-sizing: border-box;
+    border: 1px solid  #1dd1a1;
+}
+
+.cardd:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px gray;
+}
+
+.cardd:hover .obuna:hover{
+    box-shadow: 0 0 10px gray;
+    background-color: #1dd1a1;
+    color: white;
+}
+.cardd::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background-color: #1dd1a1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.4s linear;
+}
+.cardd:hover::after{
+    width: 100%;
+}
+.tavsiya{
+    
+    width: 40%;
+    height: 30px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #1dd1a1 ;
+    position: absolute;
+    right: -15px;
+    background-color: #1dd1a1;
+    box-shadow: 1px 1px 10px gray;
+}
+.roww{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kar{
+    margin: 0 auto;
+}
+
+.carousel-item{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px grey;
+    width: 900px;
+    height: 300px;
+    background-color: white;
+}
+.carousel-inner{
+    overflow: visible;
+}
+
+.muhiddin{
+    
+    position: absolute;
+    bottom: 255px;
+    left: 400px;
+ 
+}
+.orqa{
+    z-index: -10;
+    width: 1200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left:  -150px;
+    bottom: 35px;
+
+}
+
