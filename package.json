@@ -9,7 +9,7 @@
     "availity-reactstrap-validation": "^2.7.0",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
